@@ -1,0 +1,59 @@
+{
+  "name": "huawei-router-api",
+  "version": "0.1.0",
+  "description": "An API for querying Huawei routers",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "dev:web": "cross-env TARGET=dev-web rollup -w -c ./rollup.config.js",
+    "dev:node": "cross-env TARGET=dev-node rollup -w -c ./rollup.config.js",
+    "dev": "concurrently --kill-others \"npm run dev:node\" \"npm run dev:web\"",
+    "build:web": "cross-env TARGET=prod-web rollup -c ./rollup.config.js",
+    "build:node": "cross-env TARGET=prod-node rollup -c ./rollup.config.js",
+    "build": "npm run build:web && npm run build:node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/siphomateke/huawei-router-api.git"
+  },
+  "keywords": [
+    "api",
+    "router",
+    "huawei",
+    "b315"
+  ],
+  "author": "siphomateke <siphomateke@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siphomateke/huawei-router-api/issues"
+  },
+  "homepage": "https://github.com/siphomateke/huawei-router-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "babel-runtime": "^6.26.0",
+    "dotty": "^0.1.0",
+    "es6-error": "^4.1.1",
+    "jsdom": "^11.10.0",
+    "moment": "^2.22.1",
+    "node-rsa": "^0.4.2",
+    "promise.prototype.finally": "^3.1.0",
+    "sha.js": "^2.4.11",
+    "tough-cookie": "^3.0.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.5.1",
+    "cross-env": "^5.1.6",
+    "rollup": "^0.55.5",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-sourcemaps": "^0.4.2"
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "smsOtpMiddleware",
+    "version": "1.0.0",
+    "description": "SMS sending API or Module for sending smses from system number to client(s).",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Optic-Solutions/SMS-OTP-Middleware"
+    },
+    "keywords": [
+        "smartpay"
+    ],
+    "author": "Khauta Maliehe",
+    "license": "MIT",
+    "homepage": "https://github.com/Optic-Solutions/SMS-OTP-Middleware#readme",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "axios-cookiejar-support": "^0.4.2",
+        "babel-runtime": "^6.26.0",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "dotty": "^0.1.0",
+        "ejs": "^3.1.6",
+        "es6-error": "^4.1.1",
+        "express": "^4.17.1",
+        "express-handler": "^0.2.0",
+        "huawei-router": "^1.0.2",
+        "jsdom": "^11.10.0",
+        "moment": "^2.22.1",
+        "node-rsa": "^0.4.2",
+        "promise.prototype.finally": "^3.1.0",
+        "rxjs": "^7.8.0",
+        "sha.js": "^2.4.11",
+        "tough-cookie": "^3.0.1",
+        "xml2js": "^0.4.19"
+    }
+}
